@@ -7,11 +7,17 @@
     <meta name = "keywords" content="aqui são as palavras chaves do site"> <!-- aqui é a palavra chave do site, ou seja, ajuda no mecanismo de busca e indicação do navegador  -->
     <meta name = "author" content=" Ben Ariel"> <!-- aqui é o autor do site -->
     <title> LótusTech</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- aqui são titulos do site. Eles vao de 1 a 6,do mais importante para o menos importante.Ou seja,o 1 é o mais  importante e o 6 o menos  -->
-    <img src="img/logolotus.JPG" alt="logo da empresa,uma flor de lotus roxa com aparencia tecnologica" width="500" height="300">
     <h1> Informações da <abbr title = " Escolhemos esse nome pois a flor de Lótus é uma flor que prospera até mesmo em locais remotos "> LótusTech </abbr></h1>
+    <header> 
+        <div>
+            <P> Nós prezamos pelo conforto e confiança <br>de nossos clientes.</P>
+        </div>
+        
+    </header>
+    <!-- aqui são titulos do site. Eles vao de 1 a 6,do mais importante para o menos importante.Ou seja,o 1 é o mais  importante e o 6 o menos  -->
     <hr> <!-- aqui é uma linha horizontal,usada para separar um item de outro -->
     
     <h2> Serviços oferecidos </h2>
@@ -19,18 +25,19 @@
     <p> Desenvolvemos sites para todo tipo de pessoas e empresas, seja ele um site como blog pessoal ou comercial empresarial.</p>
     <p> No <strong> primero</strong> site desenvolvido por nossa empresa, o produto sai <br></p>
     <p><b> De <del>R$ 999</del>  por R$ 499</b> </p>
-    <img src="img/insert-image-html.jpg" alt="foto de um dos nossos sites">
+    <img class="space center" src="img/insert-image-html.jpg" alt="foto de um dos nossos sites">
     <h3> Desenvolvimento de Sistemas</h3>
     <p> Desenvolvemos sistemas de pequeno porte para micro-empresas e autônomos.</p>
-    <img src="img/Html-source-code.png" alt="foto de um dos sistemas feitos por nós">
+    <img class="space center" src="img/Html-source-code.png" alt="foto de um dos sistemas feitos por nós">
     <br> <!-- aqui é uma quebra de linha -->
     <!-- Strong é um bold que o site entende como importante,e nao somente uma marcação -->
     <!-- o del deixa um traço na frase desejada,como se fosse apagada -->
     <h3> Desenvolvimento de aplicativos</h3>
     <p> Em breve mais infrmações</p>
 
-    <h2> Nossa tabela de preços</h2>
+    <h2 style="text-align: center;"> Nossa tabela de preços</h2>
     <table width="100%" border="1" style="text-align: center;">
+        <div>
         <tr> 
             <th> Serviço </th>
             <th> Preço </th>
@@ -51,16 +58,19 @@
             <td> R$ 1500 a R$ 3500</td>
             <td> 12 a 24 semanas</td>
         </tr>
+        </div>
      </table>
 
     <hr>
-
-    <h2> Contatos:</h2>
-    <p> Email: <small> lótustecno@gmail.com</small> </p>
-    <p> Telefone: <small> (84) 9 8002-8922</small> </p>
+    <div class="rodape">
+        <h2> Contatos:</h2>
+        <p> Email: <small> lótustecno@gmail.com</small> </p>
+        <p> Telefone: <small> (84) 9 8002-8922</small> </p>
      <address>Endereço:  Sala número Puta que Pariu, Bloco das EJs UFERSA,Mossoró-RN. </address>
-     <p> Instagram: <small> @lotustecno</small> ou <a href="https://www.instagram.com/lotustecno/" target="_blank"> clique aqui. </a></p>
-     <p> Quer saber mais sobre nós? <a href="Mais-Sobre-Nós/sobre.html"> Clique Aqui!</a></p>
+     <p> Instagram: <small> @lotustecno</small> ou <a class="button" href="https://www.instagram.com/lotustecno/" target="_blank"> clique aqui! </a></p>
+     <p> Quer saber mais sobre nós? <a class="button" href="Mais-Sobre-Nós/sobre.html"> Clique Aqui!</a></p>
+     
+    </div>
 
 
 
