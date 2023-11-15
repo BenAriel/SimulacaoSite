@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Oxanium:wght@300;400;700&display=swap');
 body
 {
   margin-left: 5px; /* Margem à esquerda */
@@ -7,6 +7,8 @@ body
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
+  text-align: center;
+  margin-top: 0px;
 
 }
 .space
@@ -15,8 +17,62 @@ padding: 30px;
 background-size: contain;
 height: 300px;
 width: 500px;
+}
 
+header {
+    position: relative;
+    width: 1340px;
+    height: 600px;
+}
 
+.fundo,
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.fundo {
+    background-color: #4d004d;
+    opacity: 0.90;
+    z-index: 1; /* Coloca a cor acima da imagem */
+}
+
+.overlay {
+    background-image: url(../img/logolotus.png);
+    width: 1340px;
+    height: 600px;
+    background-size: contain;
+    z-index: 0; /* Coloca a imagem abaixo da cor */
+}
+
+.conteudo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2; /* Coloca o conteúdo (imagem e texto) acima da cor e imagem de fundo */
+}
+
+.secImg {
+    width: 40%;
+    height: 80%;
+    padding-top: 115px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 1; /* Coloca a imagem principal acima da cor */
+}
+
+.texto {
+    width: 50%;
+    padding: 20px;
+    position: relative;
+    font-size: 36px;
+    color: white;
+    font-family: agbalumo;
+    z-index: 2; /* Coloca o texto acima da cor e imagem de fundo */
 }
 
 .center
@@ -26,14 +82,28 @@ width: 500px;
  margin-right: auto;
 }
 
-
-h1
+.inline
 {
-    text-align: center;
-    padding: 30px ;
-    background-color: gray;
-
+    display: inline-block;
+ padding-left: 20px;
+ padding-right: 20px;
+ font-style: bold;
 }
+h1
+{   font-style: bold;
+    display: inline-block;
+}
+
+.cabecalho
+{
+    background: white;
+    position:sticky;
+    top: 0;
+    z-index: 10;
+    border: 1px solid white;
+    border-bottom-color: gray;
+}
+
 
 .button
 {
@@ -45,37 +115,28 @@ h1
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    transition: background 0.5s;
+
 
 
 }
 .button:hover {
     background: blue; /* Altera para verde ao passar o mouse */
+    transition: background 0.5s;
+
 }
 .rodape
 {
     
-    background-color: #b3b3b3;
+    background-color: #333;
+    color: white;  
 
 }
-header
+.cinza
 {
-    height: 600px;
-    background-color: #4d004d;
-    color: white;
-    background-image: url(../img/logolotus.JPG);
-    background-repeat: no-repeat;
-    background-size: contain;
-    font-size: 30px;
-    display: flex;
-    align-items: center; /* Centraliza verticalmente */
-    justify-content: flex-end;
-    padding-right: 80px;
-    
+    background-color: #e6e6e6;
 }
 hr
 {
-    
     max-width: 100%;
     padding: 1px;
     background-color: #4d004d;
@@ -99,6 +160,11 @@ th {
 
 tr:nth-child(even) {
     background-color: #f2f2f2;
+}
+a.sem-linha
+{
+    text-decoration: none;
+    color: black;
 }
 
 
