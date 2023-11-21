@@ -12,23 +12,27 @@
     <meta name="author" content=" Ben Ariel"> <!-- aqui é o autor do site -->
     <title> LótusTech</title>
     <link rel="stylesheet" href="css/style.css">
-
+    <script src="script.js"></script>
 </head>
 
 <body>
     <div class="cabecalho">
-        
-        <p class="inline" style="font-size: 30px;">
-            <Strong> <abbr title="aqui deve recarregar a página quando clicar(javascript)">LótusTech</abbr></Strong>
+        <p class="inline cursorcomum" style="font-size: 30px;">
+            <strong onclick="reloadPage()">LótusTech</abbr></strong>
         </p>
-
-            <p class="inline">
-               <strong> <a class="sem-linha" href="Mais-Sobre-Nós/sobre.html">Sobre nós</a></strong>
-            </p>
-            <p class="inline">
-                <strong> <a class="sem-linha" href="">quero contratar um serviço </a></strong>
-            </p>
+        <p class="inline">
+            <strong><a class="sem-linha" href="Mais-Sobre-Nós/sobre.html">Sobre nós</a></strong>
+        </p>
+        <div class="dropdown inline cursorcomum">
+            <strong>Quero contratar um serviço</strong>
+            <div class="dropdown-content">
+                <a href="Mais-Sobre-Nós/contratarsite.html">Contratar Site</a>
+                <a href="Mais-Sobre-Nós/contratarsistema.html">Contratar Sistema</a>
+                <a href="Mais-Sobre-Nós/contrataraplicativo.html">Contratar Aplicativo</a>
+            </div>
+        </div>
     </div>
+    
     <header>
         <div class="fundo"></div>
         <div class="overlay"></div>
@@ -103,9 +107,5 @@
         <p> Quer saber mais sobre nós? <a class="button" href="Mais-Sobre-Nós/sobre.html"> Clique Aqui!</a></p>
 
     </div>
-
-
-
 </body>
-
 </html>
