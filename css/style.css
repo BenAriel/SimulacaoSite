@@ -61,7 +61,7 @@ header {
 .secImg {
     width: 40%;
     height: 80%;
-    padding-top: 115px;
+    margin-top: 115px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -209,5 +209,56 @@ height: 350px;
 width: 500px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2) 0 6px 20px 0 rgba(0,0,0,0.19);
     
+}
+.caixa-texto {
+    margin-top: 20px;
+    padding: 50px;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    resize: none;
+    overflow: auto;
+    text-align: left; /* Alinha o texto à esquerda */
+    vertical-align: top; /* Alinha o texto ao topo */
+  }
+ 
+ .text-pai {
+    width: 50%;
+    margin: 0 auto; /* Centraliza o container */
+ }
+ .carrossel {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 1s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+}
+.slide img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover; /* Isso fará com que a imagem preencha o espaço disponível sem distorcer */
+ }
+
+.box-informacao
+{
+    background-color: #ccc;
+    color: #4d004d;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#comentario
+{
+    width: 50%;
+    margin: 0 auto; /* Isso centralizará a barra de comentários horizontalmente */
+    display: none; /* A barra de comentários começa oculta */
+    align-items: center;
 }
   

@@ -12,9 +12,65 @@
     <meta name="author" content=" Ben Ariel"> <!-- aqui é o autor do site -->
     <title> Conheça nosso serviços de sites</title>
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../script.js"></script>
 </head>
 <body>
-    <H1>Esta é a nossa página de serviços de sites</H1>
+    <div class="cabecalho" style=" margin-bottom: 50px;">
+        <p class="inline cursorcomum" style="font-size: 30px;">
+             <a class="sem-linha" href="../index.html"><strong>LótusTech</strong></a>
+        </p>
+        <p class="inline">
+            <strong><a class="sem-linha" href="Mais-Sobre-Nós/sobre.html">Sobre nós</a></strong>
+        </p>
+        <div class="dropdown inline cursorcomum">
+            <strong>Quero contratar um serviço</strong>
+            <div class="dropdown-content">
+                <a href="contratarsite.html">Contratar Site</a>
+                <a href="contratarsistema.html">Contratar Sistema</a>
+                <a href="contrataraplicativo.html">Contratar Aplicativo</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="carrossel">
+        <h1>Alguns sites que já fizemos</h1>
+        <div class="slides">
+            <div class="slide space"><img src="../img/Html-source-code.png" alt="Imagem 1"></div>
+            <div class="slide space"><img src="../img/insert-image-html.jpg" alt="Imagem 2"></div>
+            <div class="slide space"><img src="../img/aplicativo2.png" alt="Imagem 3"></div>
+            <div class="slide space"><img src="../img/aplicativo3.png" alt="Imagem 3"></div>
+        </div>
+    </div>
+    <hr>
+    <div class="box-informacao">
+        <h2>qual o número de páginas que seu site irá ter?</h2>
+        <select id="selectpag" name="opcoes">
+            <option value="1a3">1 a 3</option>
+            <option value="4a5">4 a 5</option>
+            <option value="+5">+5</option>
+          </select>
+          <br>
+          <h2>qual a finalidade do seu site?</h2>
+          <select id="selectFinalidade" name="opcoes" onchange="mostrarComentario()">
+            <option value="e-commerce">e-commerce </option>
+            <option value="empresarial">empresarial</option>
+            <option value="blog pessoal">blog pessoal</option>
+            <option value="notícias">notícias</option>
+            <option value="outros">outros</option>
+          </select>
+       
+          <textarea style="display: none;" id="comentario" rows="4" cols="50" placeholder="Digite sua finalidade..."></textarea>
+
+          <br>
+    <h2>nos diga uma breve descrição do que quer para seu site:<h2>
+    <br>
+    <div class="text-pai">
+       <textarea class="caixa-texto" id="meuInput"></textarea>
+    </div>
+    <br>
+    <p class="button cursorcomum" onclick="lerTexto()">Terminar Encomenda</p>
+    </div>
+
+    
+    <script src="../script.js"></script>
 </body>
 </html>
